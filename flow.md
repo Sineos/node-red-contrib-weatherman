@@ -74,7 +74,8 @@
                 "d1a538f9.81dde",
                 "180e2619.de0ee2",
                 "cb9d9021.2c44f",
-                "e9a1d0fd.80ef58"
+                "e9a1d0fd.80ef58",
+                "a68a6e.40eab59"
             ]
         ]
     },
@@ -111,7 +112,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 820,
+        "x": 540,
         "y": 200,
         "wires": [
             []
@@ -150,12 +151,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 830,
+        "x": 550,
         "y": 240,
         "wires": [
             [
-                "76b596e8.b0a7a8",
-                "a15ab6c3.e8feb"
+                "76b596e8.b0a7a8"
             ]
         ]
     },
@@ -192,7 +192,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 840,
+        "x": 560,
         "y": 280,
         "wires": [
             []
@@ -208,7 +208,7 @@
             "6ff5d495.9ca94c",
             "b1c34c3a.cf0f18"
         ],
-        "x": 1510,
+        "x": 1230,
         "y": 1640,
         "wires": [
             [
@@ -249,7 +249,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 840,
+        "x": 560,
         "y": 320,
         "wires": [
             []
@@ -288,7 +288,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 830,
+        "x": 550,
         "y": 360,
         "wires": [
             []
@@ -327,7 +327,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 830,
+        "x": 550,
         "y": 400,
         "wires": [
             []
@@ -366,7 +366,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 810,
+        "x": 530,
         "y": 440,
         "wires": [
             []
@@ -405,7 +405,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 810,
+        "x": 530,
         "y": 480,
         "wires": [
             []
@@ -444,7 +444,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 830,
+        "x": 550,
         "y": 520,
         "wires": [
             []
@@ -483,7 +483,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 810,
+        "x": 530,
         "y": 560,
         "wires": [
             []
@@ -522,7 +522,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 810,
+        "x": 530,
         "y": 600,
         "wires": [
             []
@@ -561,7 +561,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 810,
+        "x": 530,
         "y": 640,
         "wires": [
             []
@@ -600,7 +600,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 820,
+        "x": 540,
         "y": 680,
         "wires": [
             []
@@ -639,7 +639,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 820,
+        "x": 540,
         "y": 720,
         "wires": [
             []
@@ -678,7 +678,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 810,
+        "x": 530,
         "y": 760,
         "wires": [
             [
@@ -719,7 +719,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 820,
+        "x": 540,
         "y": 800,
         "wires": [
             [
@@ -760,10 +760,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 850,
+        "x": 570,
         "y": 840,
         "wires": [
-            []
+            [
+                "e86ffdf9.f674d8"
+            ]
         ]
     },
     {
@@ -799,8 +801,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 860,
-        "y": 880,
+        "x": 580,
+        "y": 960,
         "wires": [
             []
         ]
@@ -838,7 +840,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 850,
+        "x": 570,
         "y": 920,
         "wires": [
             []
@@ -877,10 +879,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 810,
-        "y": 960,
+        "x": 530,
+        "y": 880,
         "wires": [
-            []
+            [
+                "e86ffdf9.f674d8"
+            ]
         ]
     },
     {
@@ -916,7 +920,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 810,
+        "x": 530,
         "y": 1000,
         "wires": [
             [
@@ -957,7 +961,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 800,
+        "x": 520,
         "y": 1040,
         "wires": [
             []
@@ -996,7 +1000,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 830,
+        "x": 550,
         "y": 1080,
         "wires": [
             []
@@ -1035,7 +1039,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 840,
+        "x": 560,
         "y": 1120,
         "wires": [
             []
@@ -1074,7 +1078,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 820,
+        "x": 540,
         "y": 1160,
         "wires": [
             []
@@ -1113,7 +1117,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 810,
+        "x": 530,
         "y": 1200,
         "wires": [
             []
@@ -1152,7 +1156,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 820,
+        "x": 540,
         "y": 1240,
         "wires": [
             []
@@ -1191,7 +1195,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 820,
+        "x": 540,
         "y": 1280,
         "wires": [
             []
@@ -1230,7 +1234,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 820,
+        "x": 540,
         "y": 1320,
         "wires": [
             []
@@ -1262,7 +1266,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 820,
+        "x": 540,
         "y": 1420,
         "wires": [
             []
@@ -1294,7 +1298,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 840,
+        "x": 560,
         "y": 1460,
         "wires": [
             []
@@ -1326,7 +1330,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 810,
+        "x": 530,
         "y": 1500,
         "wires": [
             []
@@ -1358,7 +1362,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 830,
+        "x": 560,
         "y": 1540,
         "wires": [
             []
@@ -1390,7 +1394,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 820,
+        "x": 540,
         "y": 1580,
         "wires": [
             [
@@ -1424,8 +1428,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 800,
-        "y": 1620,
+        "x": 520,
+        "y": 1660,
         "wires": [
             []
         ]
@@ -1440,7 +1444,7 @@
         "start": "",
         "inout": "out",
         "property": "payload",
-        "x": 1010,
+        "x": 730,
         "y": 1580,
         "wires": [
             [
@@ -1459,11 +1463,11 @@
         "op2type": "bool",
         "duration": "2",
         "extend": true,
-        "units": "s",
+        "units": "min",
         "reset": "1",
         "bytopic": "all",
         "name": "TimeOut",
-        "x": 1160,
+        "x": 880,
         "y": 1540,
         "wires": [
             [
@@ -1479,7 +1483,7 @@
         "func": "'use strict';\n// customize baspath for the topic\nvar basePath = '/weatherman/status/';\n// customize basepath for info properties\nvar basePathSys = '/weatherman/info/';\n\nvar myTopic = '',\n    myValue = '',\n    myUnit = '',\n    myType = '',\n    myTime = '',\n    myResults = [],\n    myJSON = msg.payload,\n    myObject = '';\n\n\n// Regex to match the unicode characters for EOT\nvar grepEOT = /(.*)(\\u0003|\\u0004)/;\nvar match = grepEOT.exec(myJSON);\n\n// String contains EOT, should be complete\nif (match !== null) {\n  // Try to parse JSON and validate object\n  myObject = JSON.parse(match[1]);\n  if (myObject && typeof myObject === 'object') {\n    // loop through vars array\n    var myObjectVars = myObject.vars;\n    var arrayLength = myObjectVars.length;\n    for (var i = 0; i < arrayLength; i += 1) {\n      myTopic = basePath + myObjectVars[i].homematic_name;\n      myUnit = myObjectVars[i].unit;\n      myType = myObjectVars[i].type;\n      myTime = new Date();\n      myTime = myTime.toLocaleString();\n      // ensure correct type\n      if (myType === 'number') {\n        myValue = Number(myObjectVars[i].value);\n      } else if (myType === 'string') {\n        myValue = String(myObjectVars[i].value);\n      } else if (myType === 'boolean') {\n        (myObjectVars[i].value === 'true' ? myValue = true : myValue = false);\n      }\n      // Push values as objects into an array\n      myResults.push({topic: myTopic, payload: myValue, unit: myUnit, timestamp: myTime});\n    }\n    // loop through Systeminfo\n    var myObjectSys = myObject.Systeminfo;\n    for (var k of Object.keys(myObjectSys)) {\n      myTopic = basePathSys + k;\n      myValue = myObjectSys[k];\n      myTime = Math.floor(Date.now() / 1000);\n      // Push values as objects into an array\n      myResults.push({topic: myTopic, payload: myValue, timestamp: myTime});\n    }\n    // return array with the results as messages\n    return [myResults];\n  // Possibly truncated / corrupt message\n  } else {\n    node.error('Weatherman: Incomplete or corrupt JSON received', msg);\n  }\n// No EOT found or parse error. Possibly truncated / corrupt message\n} else {\n  node.error('Weatherman: Incomplete or corrupt JSON received', msg);\n}\n",
         "outputs": 1,
         "noerr": 0,
-        "x": 1710,
+        "x": 1430,
         "y": 320,
         "wires": [
             []
@@ -1496,7 +1500,7 @@
         "func": "'use strict';\n// customize baspath for the topic\nvar basePath = '/weatherman/status/';\n// customize basepath for info properties\nvar basePathSys = '/weatherman/info/';\n\nvar myTopic = '',\n    myValue = '',\n    myUnit = '',\n    myType = '',\n    myTime = '',\n    myResults = [],\n    myJSON = msg.payload,\n    myObject = '';\n\n\n// Regex to match the unicode characters for EOT\nvar grepEOT = /(.*)(\\u0003|\\u0004)/;\nvar match = grepEOT.exec(myJSON);\n\n// String contains EOT, should be complete\nif (match !== null) {\n  // Try to parse JSON and validate object\n  myObject = JSON.parse(match[1]);\n  if (myObject && typeof myObject === 'object') {\n    // loop through vars array\n    var myObjectVars = myObject.vars;\n    var arrayLength = myObjectVars.length;\n    for (var i = 0; i < arrayLength; i += 1) {\n      myTopic = basePath + myObjectVars[i].homematic_name;\n      myUnit = myObjectVars[i].unit;\n      myType = myObjectVars[i].type;\n      myTime = new Date();\n      myTime = myTime.toLocaleString();\n      // ensure correct type\n      if (myType === 'number') {\n        myValue = Number(myObjectVars[i].value);\n      } else if (myType === 'string') {\n        myValue = String(myObjectVars[i].value);\n      } else if (myType === 'boolean') {\n        (myObjectVars[i].value === 'true' ? myValue = true : myValue = false);\n      }\n      // Push values as objects into an array\n      myResults.push({topic: myTopic, payload: myValue, unit: myUnit, timestamp: myTime});\n    }\n    // loop through Systeminfo\n    var myObjectSys = myObject.Systeminfo;\n    for (var k of Object.keys(myObjectSys)) {\n      myTopic = basePathSys + k;\n      myValue = myObjectSys[k];\n      myTime = Math.floor(Date.now() / 1000);\n      // Push values as objects into an array\n      myResults.push({topic: myTopic, payload: myValue, timestamp: myTime});\n    }\n    // map results to the node's outputs\n    var singleOutputs = myResults.map(function (reformated) {\n        return reformated;\n    });\n    return singleOutputs;\n  // Possibly truncated / corrupt message\n  } else {\n    node.error('Weatherman: Incomplete or corrupt JSON received', msg);\n  }\n// No EOT found or parse error. Possibly truncated / corrupt message\n} else {\n  node.error('Weatherman: Incomplete or corrupt JSON received', msg);\n}\n",
         "outputs": 36,
         "noerr": 0,
-        "x": 1710,
+        "x": 1430,
         "y": 680,
         "wires": [
             [],
@@ -1584,11 +1588,11 @@
         "order": 0,
         "width": "5",
         "height": "5",
-        "format": "<script type=\"text/javascript\" src=\"/addons/red/static/scripts/steelseries-min.js\"></script>\n<script type=\"text/javascript\" src=\"/addons/red/static/scripts/tween-min.js\"></script>\n\n<script>\nvar TrafLight;\n(function(scope){\n  scope.$watch('msg', function(msg) {\n    if (msg.payload === 1) {\n      TrafLight.setGreenOn(true);\n    } else if (msg.payload === 0) {\n      TrafLight.setGreenOn(false);\n    } else if (msg.payload === 'con_ok') {\n      TrafLight.setRedOn(false);\n      scope.conStatus = 'Connected';\n    } else if (msg.payload === 'con_timeout') {\n      TrafLight.setRedOn(true);\n      scope.conStatus = 'Connection Timeout';\n    } else if (msg.error !== undefined) {\n      TrafLight.setYellowOn(true);\n      scope.jsonStatus = 'JSON Error'\n    } \n  });\n}(scope));\n\nTrafLight = new steelseries.TrafficLight('canvasTrafLight', {\n              width: 100,\n              height: 200\n            });\n\nscope.conStatus = 'Connected';\nscope.jsonStatus = 'JSON OK';\n\n</script>\n\n<table width=\"100%\" border=\"0\">\n  <tbody>\n    <tr>\n      <td width=\"105\" rowspan=\"3\"><canvas id=\"canvasTrafLight\" width=\"100\" height=\"200\"></canvas></td>\n      <td>{{conStatus}}</td>\n    </tr>\n    <tr>\n      <td>{{jsonStatus}}</td>\n    </tr>\n    <tr>\n      <td>Heart Beat {{msg.timestamp}}</td>\n    </tr>\n  </tbody>\n</table>",
+        "format": "<script type=\"text/javascript\" src=\"/addons/red/static/scripts/steelseries-min.js\"></script>\n<script type=\"text/javascript\" src=\"/addons/red/static/scripts/tween-min.js\"></script>\n\n<script>\nvar TrafLight;\nTrafLight = new steelseries.TrafficLight('canvasTrafLight', {\n              width: 100,\n              height: 200\n            });\n\n(function(scope){\n  scope.$watch('msg', function(msg) {\n    if (msg.payload === 1) {\n      TrafLight.setGreenOn(true);\n    } else if (msg.payload === 0) {\n      TrafLight.setGreenOn(false);\n    } else if (msg.payload === 'con_ok') {\n      TrafLight.setRedOn(false);\n      scope.conStatus = 'Connected';\n    } else if (msg.payload === 'con_timeout') {\n      TrafLight.setRedOn(true);\n      scope.conStatus = 'Connection Timeout';\n    } else if (msg.error !== undefined) {\n      TrafLight.setYellowOn(true);\n      scope.jsonStatus = 'JSON Error'\n    } \n  });\n}(scope));\nscope.conStatus = 'Connected';\nscope.jsonStatus = 'JSON OK';\n\n</script>\n\n\n<table width=\"100%\" border=\"0\">\n  <tbody>\n    <tr>\n      <td width=\"105\" rowspan=\"3\"><canvas id=\"canvasTrafLight\" width=\"100\" height=\"200\"></canvas></td>\n      <td>{{conStatus}}</td>\n    </tr>\n    <tr>\n      <td>{{jsonStatus}}</td>\n    </tr>\n    <tr>\n      <td>Heart Beat {{msg.timestamp}}</td>\n    </tr>\n  </tbody>\n</table>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "templateScope": "local",
-        "x": 1800,
+        "x": 1520,
         "y": 1600,
         "wires": [
             []
@@ -1608,7 +1612,7 @@
         "reset": "",
         "bytopic": "all",
         "name": "Heart Beat",
-        "x": 1530,
+        "x": 1250,
         "y": 1600,
         "wires": [
             [
@@ -1635,7 +1639,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1520,
+        "x": 1240,
         "y": 1520,
         "wires": [
             [
@@ -1661,7 +1665,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1330,
+        "x": 1050,
         "y": 1540,
         "wires": [
             [
@@ -1691,7 +1695,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1520,
+        "x": 1240,
         "y": 1560,
         "wires": [
             [
@@ -1708,11 +1712,11 @@
         "order": 0,
         "width": "5",
         "height": "5",
-        "format": "<script type=\"text/javascript\" src=\"/addons/red/static/scripts/steelseries-min.js\"></script>\n<script type=\"text/javascript\" src=\"/addons/red/static/scripts/tween-min.js\"></script>\n<script>\n\nvar radial4;\n(function(scope){ \n  scope.$watch('msg', function(msg) {\n    if (msg.topic === '/weatherman/status/w_barometer') {\n      radial4.setValueAnimated(Math.round(msg.payload));\n    } else if (msg.topic === '/weatherman/status/w_barotrend') {\n      if (msg.payload === 'steigend' || msg.payload === 'stark steigend') {\n          radial4.setTrend(steelseries.TrendState.UP);\n      } else if (msg.payload === 'fallend' || msg.payload === 'stark fallend') {\n          radial4.setTrend(steelseries.TrendState.DOWN);\n      } else if (msg.payload === 'stabil') {\n          radial4.setTrend(steelseries.TrendState.STEADY);\n      }\n    }\n  });\n})(scope);\n\n\nvar areas = [steelseries.Section(800, 850, 'rgba(220, 0, 0, 0.3)'),\n             steelseries.Section(1050, 1100, 'rgba(220, 0, 0, 0.3)')];\n\nradial4 = new steelseries.Radial('canvasRadial4', {\n            gaugeType: steelseries.GaugeType.TYPE4,\n            size: 230,\n            area: areas,\n            titleString: \"Luftdruck\",\n            unitString: \"mbar\",\n            thresholdRising: false,\n            minValue: 800,\n            maxValue: 1100,\n            userLedVisible: true,\n            useOdometer: false,\n            lcdVisible: true,\n            ledVisible: false,\n            trendVisible: true\n          });\n                    \nradial4.setFrameDesign(steelseries.FrameDesign.BLACK_METAL);\nradial4.setLabelNumberFormat(steelseries.LabelNumberFormat.STANDARD);\nradial4.setTickLabelOrientation(steelseries.TickLabelOrientation.HORIZONTAL);\nradial4.setValueAnimated(0);\n\n\n</script>\n\n<canvas id=\"canvasRadial4\" width=\"230\" height=\"252\"></canvas>\n",
+        "format": "<script>\n\nvar radial4;\nvar areas = [steelseries.Section(800, 850, 'rgba(220, 0, 0, 0.3)'),\n             steelseries.Section(1050, 1100, 'rgba(220, 0, 0, 0.3)')];\n\nradial4 = new steelseries.Radial('canvasRadial4', {\n            gaugeType: steelseries.GaugeType.TYPE4,\n            size: 269,\n            area: areas,\n            titleString: \"Luftdruck\",\n            unitString: \"mbar\",\n            thresholdRising: false,\n            minValue: 800,\n            maxValue: 1100,\n            userLedVisible: true,\n            useOdometer: false,\n            lcdVisible: true,\n            ledVisible: false,\n            trendVisible: true\n          });\n                    \nradial4.setFrameDesign(steelseries.FrameDesign.BLACK_METAL);\nradial4.setBackgroundColor(steelseries.BackgroundColor.BRUSHED_METAL);\nradial4.setForegroundType(steelseries.ForegroundType.TYPE1);\nradial4.setLabelNumberFormat(steelseries.LabelNumberFormat.STANDARD);\nradial4.setValueAnimated(0);\n\n(function(scope){ \n  scope.$watch('msg', function(msg) {\n    if (msg.payload !== undefined && msg.topic === '/weatherman/status/w_barometer') {\n      radial4.setValueAnimated(Math.round(msg.payload));\n    } else if (msg.payload !== undefined && msg.topic === '/weatherman/status/w_barotrend') {\n      if (msg.payload === 'steigend' || msg.payload === 'stark_steigend') {\n          radial4.setTrend(steelseries.TrendState.UP);\n      } else if (msg.payload === 'fallend' || msg.payload === 'stark_fallend') {\n          radial4.setTrend(steelseries.TrendState.DOWN);\n      } else if (msg.payload === 'stabil') {\n          radial4.setTrend(steelseries.TrendState.STEADY);\n      }\n    }\n  });\n})(scope);\n\n</script>\n\n<canvas id=\"canvasRadial4\" width=\"230\" height=\"252\"></canvas>\n",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "templateScope": "local",
-        "x": 1050,
+        "x": 770,
         "y": 780,
         "wires": [
             []
@@ -1727,11 +1731,11 @@
         "order": 0,
         "width": "5",
         "height": "5",
-        "format": "<script type=\"text/javascript\" src=\"/addons/red/static/scripts/steelseries-min.js\"></script>\n<script type=\"text/javascript\" src=\"/addons/red/static/scripts/tween-min.js\"></script>\n<script>\n\nvar radialWind;\n(function(scope){ \n  scope.$watch('msg', function(msg) {\n    if (msg.topic === '/weatherman/status/w_wind_dir') {\n      radialWind.setValueAnimated(msg.payload);\n    }\n  });\n})(scope);\n\n\nradialWind = new steelseries.Compass('canvasRadialWind', {\n        size: 230\n    });\n                    \nradialWind.setFrameDesign(steelseries.FrameDesign.BLACK_METAL);\nradialWind.setPointerType(steelseries.PointerType.TYPE1);\nradialWind.setPointerColor(steelseries.ColorDef.BLUE);\nradialWind.setLabelNumberFormat(steelseries.LabelNumberFormat.STANDARD);\nradialWind.setTickLabelOrientation(steelseries.TickLabelOrientation.HORIZONTAL);\nradialWind.setValueAnimated(0);\n\n</script>\n\n<canvas id=\"canvasRadialWind\" width=\"230\" height=\"252\"></canvas>\n",
+        "format": "<script>\nvar radialWind;\nradialWind = new steelseries.Compass('canvasRadialWind', {\n        size: 269\n    });\n                    \nradialWind.setFrameDesign(steelseries.FrameDesign.BLACK_METAL);\nradialWind.setBackgroundColor(steelseries.BackgroundColor.BRUSHED_METAL);\nradialWind.setForegroundType(steelseries.ForegroundType.TYPE1);\nradialWind.setPointerType(steelseries.PointerType.TYPE1);\nradialWind.setPointerColor(steelseries.ColorDef.BLUE);\nradialWind.setValueAnimated(0);\n\n(function(scope){ \n  scope.$watch('msg', function(msg) {\n    if (msg.payload !== undefined && msg.topic === '/weatherman/status/w_wind_dir') {\n      radialWind.setValueAnimated(msg.payload);\n    }\n  });\n})(scope);\n</script>\n\n<canvas id=\"canvasRadialWind\" width=\"230\" height=\"252\"></canvas>\n",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "templateScope": "local",
-        "x": 1050,
+        "x": 770,
         "y": 1000,
         "wires": [
             []
@@ -1746,29 +1750,15 @@
         "order": 0,
         "width": "3",
         "height": "6",
-        "format": "<script type=\"text/javascript\" src=\"/addons/red/static/scripts/steelseries-min.js\"></script>\n<script type=\"text/javascript\" src=\"/addons/red/static/scripts/tween-min.js\"></script>\n<script>\n\nvar linearThermo;\n(function(scope){ \n  scope.$watch('msg', function(msg) {\n    if (msg.topic === '/weatherman/status/w_temperature') {\n      linearThermo.setValueAnimated(msg.payload);\n    }\n  });\n})(scope);\n\n\nlinearThermo = new steelseries.Linear('canvasLinearThermo', {\n                 width: 140,\n                 height: 320,\n                 gaugeType: steelseries.GaugeType.TYPE2,\n                 titleString: \"Außentemperatur\",\n                 unitString: \"°C\",\n                 threshold: 36,\n                 maxValue: 50,\n                 lcdVisible: true\n               });\n                    \nlinearThermo.setFrameDesign(steelseries.FrameDesign.BLACK_METAL);\nlinearThermo.setLabelNumberFormat(steelseries.LabelNumberFormat.STANDARD);\nlinearThermo.setTickLabelOrientation(steelseries.TickLabelOrientation.HORIZONTAL);\n//linearThermo.setValueAnimated(0);\n\n</script>\n\n<canvas id=\"canvasLinearThermo\" width=\"140\" height=\"320\"></canvas>\n",
+        "format": "<script type=\"text/javascript\" src=\"/addons/red/static/scripts/steelseries-min.js\"></script>\n<script type=\"text/javascript\" src=\"/addons/red/static/scripts/tween-min.js\"></script>\n\n<script>\nvar linearThermo;\nlinearThermo = new steelseries.Linear('canvasLinearThermo', {\n                 width: 140,\n                 height: 320,\n                 gaugeType: steelseries.GaugeType.TYPE2,\n                 titleString: \"Außentemperatur\",\n                 unitString: \"°C\",\n                 ledVisible: false,\n                 lcdVisible: true,\n                 thresholdRising: false,\n                 thresholdVisible: false,\n                 niceScale: true,\n                 minValue: -25,\n                 maxValue: 40\n               });\n                    \nlinearThermo.setFrameDesign(steelseries.FrameDesign.BLACK_METAL);\nlinearThermo.setBackgroundColor(steelseries.BackgroundColor.BRUSHED_METAL);\nlinearThermo.setValueAnimated(0);\nlinearThermo.setMaxValue(40);\n\n(function(scope){ \n  scope.$watch('msg', function(msg) {\n    if (msg.payload !== undefined && msg.topic === '/weatherman/status/w_temperature') {\n      linearThermo.setValueAnimated(msg.payload);\n      if (msg.payload > 0) {\n        linearThermo.setMaxValue(msg.payload + 2);\n        linearThermo.setMinValue(0);\n      } else if (msg.payload < 0) {\n        linearThermo.setMaxValue(0);\n        linearThermo.setMinValue(msg.payload - 2);\n      }\n    }\n  });\n})(scope);\n</script>\n\n<canvas id=\"canvasLinearThermo\" width=\"140\" height=\"320\"></canvas>\n",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "templateScope": "local",
-        "x": 1090,
+        "x": 830,
         "y": 240,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "a15ab6c3.e8feb",
-        "type": "debug",
-        "z": "b016607a.570c28",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "x": 1140,
-        "y": 340,
-        "wires": []
     },
     {
         "id": "33a2bb8f.474a2c",
@@ -1778,7 +1768,7 @@
         "links": [
             "c258c89f.9bcea8"
         ],
-        "x": 1540,
+        "x": 1260,
         "y": 320,
         "wires": [
             [
@@ -1815,7 +1805,7 @@
         "z": "b016607a.570c28",
         "name": "Weatherman - Values",
         "info": "",
-        "x": 840,
+        "x": 560,
         "y": 160,
         "wires": []
     },
@@ -1825,7 +1815,7 @@
         "z": "b016607a.570c28",
         "name": "Weatherman - System Info",
         "info": "",
-        "x": 850,
+        "x": 570,
         "y": 1380,
         "wires": []
     },
@@ -1845,8 +1835,8 @@
         "z": "b016607a.570c28",
         "name": "Parse JSON - Möglichkeit 2",
         "info": "",
-        "x": 1730,
-        "y": 280,
+        "x": 1450,
+        "y": 283,
         "wires": []
     },
     {
@@ -1855,8 +1845,8 @@
         "z": "b016607a.570c28",
         "name": "Parse JSON - Möglichkeit 3",
         "info": "",
-        "x": 1730,
-        "y": 380,
+        "x": 1450,
+        "y": 388,
         "wires": []
     },
     {
@@ -1865,9 +1855,102 @@
         "z": "b016607a.570c28",
         "name": "Einfaches Monitoring und Fehlerbehandlung",
         "info": "",
-        "x": 1360,
+        "x": 1080,
         "y": 1460,
         "wires": []
+    },
+    {
+        "id": "a68a6e.40eab59",
+        "type": "change",
+        "z": "b016607a.570c28",
+        "name": "zeitpunkt",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "zeitpunkt",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Systeminfo.zeitpunkt",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 1620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8500acf4.93092",
+        "type": "ui_template",
+        "z": "b016607a.570c28",
+        "group": "a681ba6d.52c098",
+        "name": "Wind Rose (LT)",
+        "order": 0,
+        "width": "5",
+        "height": "5",
+        "format": "<script>\n\n/*\n * Version 6 of the Windrose/Radar gauge\n * Originally created by Mark Crossley\n * Source: https://www.weather-watch.com/smf/index.php/topic,55071.0.html\n *\n */\n\n\n// Create some global variables to hold references to the buffers\nvar g_bufferRadar, g_bufferRadarFrame, g_bufferRadarBackground,\n    g_bufferRadarForeground, g_ctxRadarGauge;\nvar g_radarPlotSize;\n\n// Global variables that already exist in gauges-ss, if merging into gauge-ss, you\n// DO NOT need to add these\nvar g_size = 281;\nvar data = {};\nvar g_frameDesign = steelseries.FrameDesign.BLACK_METAL;\nvar g_background = steelseries.BackgroundColor.BRUSHED_METAL;\nvar g_foreground = steelseries.ForegroundType.TYPE1;\nvar LANG = {};\nLANG.compass = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];\n\n// Optional - background image - Already in gauges-ss\n//var g_imgPathURL = 'images/';\n//var g_imgSmall = document.createElement(\"img\");                     //  background image\n//g_imgSmall.setAttribute(\"src\", g_imgPathURL + \"logoLarge.png\");\n\nfunction init() {\n\n  // Calcuate the size of the gauge background and so the size of radar plot required\n  g_radarPlotSize = g_size * 0.68;\n\n  // Create a hidden div to host the Radar plot\n  var div = document.createElement('div');\n  div.style.display = 'none';\n  document.body.appendChild(div);\n\n  // radar plot canvas buffer\n  g_bufferRadar = document.createElement('canvas');\n  g_bufferRadar.width = g_radarPlotSize;\n  g_bufferRadar.height = g_radarPlotSize;\n  g_bufferRadar.id = 'radarPlot';\n  div.appendChild(g_bufferRadar);\n\n  // Create a steelseries gauge frame\n  g_bufferRadarFrame = document.createElement('canvas');\n  g_bufferRadarFrame.width = g_size;\n  g_bufferRadarFrame.height = g_size;\n  var ctxFrame = g_bufferRadarFrame.getContext('2d');\n  steelseries.drawFrame(ctxFrame, g_frameDesign, g_size/2, g_size/2, g_size, g_size);\n\n  // Create a steelseries gauge background\n  g_bufferRadarBackground = document.createElement('canvas');\n  g_bufferRadarBackground.width = g_size;\n  g_bufferRadarBackground.height = g_size;\n  var ctxBackground = g_bufferRadarBackground.getContext('2d');\n  steelseries.drawBackground(ctxBackground, g_background, g_size/2, g_size/2, g_size, g_size);\n  // Optional - add a background image\n  //var drawSize = g_size * 0.831775;\n  //var x = (g_size - drawSize) / 2;\n  //ctxBackground.drawImage(g_imgSmall, x, x, drawSize, drawSize);\n\n  // Add the compass points\n  drawCompassPoints(ctxBackground, g_size);\n\n  // Create a steelseries gauge forground\n  g_bufferRadarForeground = document.createElement('canvas');\n  g_bufferRadarForeground.width = g_size;\n  g_bufferRadarForeground.height = g_size;\n  var ctxForegound = g_bufferRadarForeground.getContext('2d');\n  steelseries.drawForeground(ctxForegound, g_foreground, g_size, g_size, false);\n\n  // Get the context of the gauge canavs on the HTML page\n  g_ctxRadarGauge = document.getElementById('canvasGauge').getContext('2d');\n}\n\n\n// Just draw an empty gauge as a placeholder when the page loads\nfunction drawWindRose() {\n  // Paint the gauge frame\n  g_ctxRadarGauge.drawImage(g_bufferRadarFrame, 0, 0);\n\n  // Paint the gauge background\n  g_ctxRadarGauge.drawImage(g_bufferRadarBackground, 0, 0);\n\n  // Paint the gauge foreground\n  g_ctxRadarGauge.drawImage(g_bufferRadarForeground, 0, 0);\n}\n\n// Redraw the gauge with data\nfunction doWindRose() {\n  console.log(data.WindRoseData);\n  // Clear the gauge\n  g_ctxRadarGauge.clearRect(0, 0, g_size, g_size);\n\n  // Clear the existing radar plot\n  g_bufferRadar.width = g_bufferRadar.height = g_radarPlotSize;\n\n  // Create a new radar plot\n  var radar = new RGraph.Radar('radarPlot', data.WindRoseData);\n  radar.Set('chart.strokestyle', 'black');\n  radar.Set('chart.colors.alpha', 0.4);\n  radar.Set('chart.colors', ['red']);\n\n  radar.Set('chart.title', 'Wind  Rose');\n  radar.Set('chart.title.size', Math.ceil(0.045 * g_radarPlotSize));\n  radar.Set('chart.title.bold', false);\n  radar.Set('chart.gutter.top', 0.2 * g_radarPlotSize);\n  radar.Set('chart.gutter.bottom', 0.2 * g_radarPlotSize);\n\n  radar.Set('chart.tooltips.effect', 'snap');\n  radar.Set('chart.labels.axes', '');\n  radar.Set('chart.background.circles', true);\n  radar.Set('chart.radius', g_radarPlotSize/2);\n  radar.Draw();\n\n  // Paint the gauge frame\n  g_ctxRadarGauge.drawImage(g_bufferRadarFrame, 0, 0);\n\n  // Paint the gauge background\n  g_ctxRadarGauge.drawImage(g_bufferRadarBackground, 0, 0);\n\n  // Paint the radar plot\n  var offset = (g_size - g_radarPlotSize) / 2;\n  g_ctxRadarGauge.drawImage(g_bufferRadar, offset, offset);\n\n  // Paint the gauge foreground\n  g_ctxRadarGauge.drawImage(g_bufferRadarForeground, 0, 0);\n\n}\n\n\n// Helper function to put the compass points on the background\nfunction drawCompassPoints(ctx, size) {\n  ctx.save();\n  // set the font\n  ctx.font = (0.06 * size) + 'px serif';\n  ctx.fillStyle = '#000000';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n\n  // Draw the compass points\n  for (var i=0; i<4; i++) {\n    ctx.translate(size/2, size*0.125);\n    ctx.fillText(LANG.compass[i*2], 0, 0, size);\n    ctx.translate(-size/2, -size*0.125);\n    // Move to center\n    ctx.translate(size/2, size/2);\n    ctx.rotate(Math.PI/2);\n    ctx.translate(-size/2, -size/2);\n  }\n  ctx.restore();\n}\n// Initial setup\ninit();\ndrawWindRose();\n\n(function(scope) {\n  scope.$watch('msg', function(msg) {\n    if (msg.payload !== undefined) {\n      drawWindRose();\n      data.WindRoseData = msg.payload;\n      doWindRose();\n    }\n  });\n}(scope));\n\n</script>\n\n<canvas id=\"canvasGauge\" width=\"301\" height=\"301\">No canvas in your browser...sorry...</canvas>\n\n\n\n\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 980,
+        "y": 847,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e86ffdf9.f674d8",
+        "type": "function",
+        "z": "b016607a.570c28",
+        "name": "WindData",
+        "func": "'use strict';\n// Long term wind data in h\nconst limitLongTerm = 8;\n// Mid term wind data in h\nconst limitMediumTerm = 3;\n// Short term wind data in h\nconst limitShortTerm = 1;\n\n// Define context to store data across multiple messages\nvar windData = context.get('windData') || {};\nvar windVector = context.get('windVector') || [];\n\n// Collect both wind speed and wind direction\n// and store them in the context\nswitch (msg.topic) {\n  case '/weatherman/status/w_wind_direction':\n    windData.direction = msg.payload;\n    context.set('windData', windData);\n    msg = null;\n    break;\n  case '/weatherman/status/w_wind_avg':\n    windData.speed = msg.payload;\n    context.set('windData', windData);\n    msg = null;\n    break;\n  default:\n    msg = null;\n    break;\n}\n\n// Start processing the data once both speed and \n// direction are available\nif (windData.direction != null && windData.speed != null) {\n  var LTdata = [],\n      MTdata = [],\n      STdata = [],\n      LTresult = [],\n      MTresult = [],\n      STresult = [],\n      windObj = {},\n      LTmsg = {},\n      MTmsg = {},\n      STmsg = {};\n  const LTlimit = Date.now() - (limitLongTerm * 3600 * 1000);\n  const MTlimit = Date.now() - (limitMediumTerm * 3600 * 1000);\n  const STlimit = Date.now() - (limitShortTerm * 3600 * 1000);\n\n  // Generate an object out of speed, direction and \n  // current time and store as array\n  windObj = {[windData.direction]: windData.speed, timestamp: Date.now()};\n  windVector.push(windObj);\n\n  // Null context to again collect a pair of speed \n  // and direction\n  windData = null;\n  context.set('windData', windData);\n\n  // Create arrays with data only for the above defined\n  // time ranges\n  LTdata = windVector.filter((arr) => arr.timestamp > LTlimit);\n  MTdata = LTdata.filter((arr) => arr.timestamp > MTlimit);\n  STdata = MTdata.filter((arr) => arr.timestamp > STlimit);\n  \n  // Make sure that the context does not grow infinitly \n  context.set('windVector', LTdata);\n  \n  // Get the sum of all wind speeds for the different\n  // cardinal points and for the above defined \n  // time ranges\n  LTresult[0] = LTdata.map((item) => (isNaN(item.N) ? 0 : item.N)).reduce((prev, next) => prev + next);\n  LTresult[1] = LTdata.map((item) => (isNaN(item.NE) ? 0 : item.NE)).reduce((prev, next) => prev + next);\n  LTresult[2] = LTdata.map((item) => (isNaN(item.E) ? 0 : item.E)).reduce((prev, next) => prev + next);\n  LTresult[3] = LTdata.map((item) => (isNaN(item.SE) ? 0 : item.SE)).reduce((prev, next) => prev + next);\n  LTresult[4] = LTdata.map((item) => (isNaN(item.S) ? 0 : item.S)).reduce((prev, next) => prev + next);\n  LTresult[5] = LTdata.map((item) => (isNaN(item.SW) ? 0 : item.SW)).reduce((prev, next) => prev + next);\n  LTresult[6] = LTdata.map((item) => (isNaN(item.W) ? 0 : item.W)).reduce((prev, next) => prev + next);\n  LTresult[7] = LTdata.map((item) => (isNaN(item.NW) ? 0 : item.NW)).reduce((prev, next) => prev + next);\n  LTmsg.payload = LTresult;\n  MTresult[0] = MTdata.map((item) => (isNaN(item.N) ? 0 : item.N)).reduce((prev, next) => prev + next);\n  MTresult[1] = MTdata.map((item) => (isNaN(item.NE) ? 0 : item.NE)).reduce((prev, next) => prev + next);\n  MTresult[2] = MTdata.map((item) => (isNaN(item.E) ? 0 : item.E)).reduce((prev, next) => prev + next);\n  MTresult[3] = MTdata.map((item) => (isNaN(item.SE) ? 0 : item.SE)).reduce((prev, next) => prev + next);\n  MTresult[4] = MTdata.map((item) => (isNaN(item.S) ? 0 : item.S)).reduce((prev, next) => prev + next);\n  MTresult[5] = MTdata.map((item) => (isNaN(item.SW) ? 0 : item.SW)).reduce((prev, next) => prev + next);\n  MTresult[6] = MTdata.map((item) => (isNaN(item.W) ? 0 : item.W)).reduce((prev, next) => prev + next);\n  MTresult[7] = MTdata.map((item) => (isNaN(item.NW) ? 0 : item.NW)).reduce((prev, next) => prev + next);\n  MTmsg.payload = MTresult;\n  STresult[0] = STdata.map((item) => (isNaN(item.N) ? 0 : item.N)).reduce((prev, next) => prev + next);\n  STresult[1] = STdata.map((item) => (isNaN(item.NE) ? 0 : item.NE)).reduce((prev, next) => prev + next);\n  STresult[2] = STdata.map((item) => (isNaN(item.E) ? 0 : item.E)).reduce((prev, next) => prev + next);\n  STresult[3] = STdata.map((item) => (isNaN(item.SE) ? 0 : item.SE)).reduce((prev, next) => prev + next);\n  STresult[4] = STdata.map((item) => (isNaN(item.S) ? 0 : item.S)).reduce((prev, next) => prev + next);\n  STresult[5] = STdata.map((item) => (isNaN(item.SW) ? 0 : item.SW)).reduce((prev, next) => prev + next);\n  STresult[6] = STdata.map((item) => (isNaN(item.W) ? 0 : item.W)).reduce((prev, next) => prev + next);\n  STresult[7] = STdata.map((item) => (isNaN(item.NW) ? 0 : item.NW)).reduce((prev, next) => prev + next);\n  STmsg.payload = STresult;\n\n  return [LTmsg, MTmsg, STmsg];\n}\n",
+        "outputs": 3,
+        "noerr": 0,
+        "x": 780,
+        "y": 860,
+        "wires": [
+            [
+                "8500acf4.93092"
+            ],
+            [],
+            []
+        ],
+        "outputLabels": [
+            "LongTerm",
+            "MidTerm",
+            "ShortTerm"
+        ]
+    },
+    {
+        "id": "4b9f5645.09b9",
+        "type": "ui_template",
+        "z": "b016607a.570c28",
+        "group": "8132d18c.052bd",
+        "name": "Load required scripts",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<script type=\"text/javascript\" src=\"/addons/red/static/scripts/steelseries-min.js\"></script>\n<script type=\"text/javascript\" src=\"/addons/red/static/scripts/tween-min.js\"></script>\n<script type=\"text/javascript\" src=\"/addons/red/static/scripts/RGraph.common.core.js\"></script>\n<script type=\"text/javascript\" src=\"/addons/red/static/scripts/RGraph.radar.js\"></script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "global",
+        "x": 820,
+        "y": 200,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "5eeec4a7.36c72c",
@@ -1875,6 +1958,7 @@
         "z": "",
         "name": "Weatherman Health",
         "tab": "3d6565b6.5d2912",
+        "order": 1,
         "disp": true,
         "width": "6",
         "collapse": false
@@ -1885,6 +1969,7 @@
         "z": "",
         "name": "Barometer",
         "tab": "3d6565b6.5d2912",
+        "order": 2,
         "disp": true,
         "width": "6",
         "collapse": false
@@ -1895,6 +1980,28 @@
         "z": "",
         "name": "Windrichtung",
         "tab": "3d6565b6.5d2912",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a681ba6d.52c098",
+        "type": "ui_group",
+        "z": "",
+        "name": "WindRose",
+        "tab": "3d6565b6.5d2912",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "8132d18c.052bd",
+        "type": "ui_group",
+        "z": "",
+        "name": "Taster",
+        "tab": "fe205248.f04ed",
         "disp": true,
         "width": "6",
         "collapse": false
@@ -1905,5 +2012,13 @@
         "z": "",
         "name": "Weatherman",
         "icon": "dashboard"
+    },
+    {
+        "id": "fe205248.f04ed",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Geräte",
+        "icon": "dashboard",
+        "order": 1
     }
 ]
