@@ -1,5 +1,7 @@
 # node-red-contrib-weatherman
 
+[German version of the ReadMe](https://raw.githubusercontent.com/Sineos/node-red-contrib-weatherman/master/README_DE.md) 
+
 A Node Red flow to parse [Weatherman's](https://www.stall.biz/project/weatherman-die-perfekte-wetterstation-fuer-die-hausautomation) JSON data. The flow offers:
 
  - 3 different ways to parse JSON
