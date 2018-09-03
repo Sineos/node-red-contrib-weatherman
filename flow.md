@@ -10,7 +10,7 @@
         "id": "47595dc.ba94324",
         "type": "tcp in",
         "z": "b016607a.570c28",
-        "name": "",
+        "name": "Listen Weatherman",
         "server": "server",
         "host": "",
         "port": "8186",
@@ -19,7 +19,7 @@
         "newline": "",
         "topic": "",
         "base64": false,
-        "x": 100,
+        "x": 110,
         "y": 800,
         "wires": [
             [
@@ -208,7 +208,7 @@
             "6ff5d495.9ca94c",
             "b1c34c3a.cf0f18"
         ],
-        "x": 1230,
+        "x": 1256,
         "y": 1640,
         "wires": [
             [
@@ -1438,13 +1438,13 @@
         "id": "30adad7a.1c38aa",
         "type": "rbe",
         "z": "b016607a.570c28",
-        "name": "",
+        "name": "WatchDog",
         "func": "rbe",
         "gap": "",
         "start": "",
         "inout": "out",
         "property": "payload",
-        "x": 730,
+        "x": 754,
         "y": 1580,
         "wires": [
             [
@@ -1467,7 +1467,7 @@
         "reset": "1",
         "bytopic": "all",
         "name": "TimeOut",
-        "x": 880,
+        "x": 906,
         "y": 1540,
         "wires": [
             [
@@ -1588,11 +1588,11 @@
         "order": 0,
         "width": "5",
         "height": "5",
-        "format": "<script type=\"text/javascript\" src=\"/addons/red/static/scripts/steelseries-min.js\"></script>\n<script type=\"text/javascript\" src=\"/addons/red/static/scripts/tween-min.js\"></script>\n\n<script>\nvar TrafLight;\nTrafLight = new steelseries.TrafficLight('canvasTrafLight', {\n              width: 100,\n              height: 200\n            });\n\n(function(scope){\n  scope.$watch('msg', function(msg) {\n    if (msg.payload === 1) {\n      TrafLight.setGreenOn(true);\n    } else if (msg.payload === 0) {\n      TrafLight.setGreenOn(false);\n    } else if (msg.payload === 'con_ok') {\n      TrafLight.setRedOn(false);\n      scope.conStatus = 'Connected';\n    } else if (msg.payload === 'con_timeout') {\n      TrafLight.setRedOn(true);\n      scope.conStatus = 'Connection Timeout';\n    } else if (msg.error !== undefined) {\n      TrafLight.setYellowOn(true);\n      scope.jsonStatus = 'JSON Error'\n    } \n  });\n}(scope));\nscope.conStatus = 'Connected';\nscope.jsonStatus = 'JSON OK';\n\n</script>\n\n\n<table width=\"100%\" border=\"0\">\n  <tbody>\n    <tr>\n      <td width=\"105\" rowspan=\"3\"><canvas id=\"canvasTrafLight\" width=\"100\" height=\"200\"></canvas></td>\n      <td>{{conStatus}}</td>\n    </tr>\n    <tr>\n      <td>{{jsonStatus}}</td>\n    </tr>\n    <tr>\n      <td>Heart Beat {{msg.timestamp}}</td>\n    </tr>\n  </tbody>\n</table>",
+        "format": "<script>\nvar TrafLight;\nTrafLight = new steelseries.TrafficLight('canvasTrafLight', {\n  width: 100,\n  height: 200\n});\n\n(function(scope){\n  scope.$watch('msg', function(msg) {\n    if (msg.payload !== undefined) {\n      if (msg.payload === 1) {\n        TrafLight.setGreenOn(true);\n      } else if (msg.payload === 0) {\n        TrafLight.setGreenOn(false);\n      } else if (msg.payload === 'con_ok') {\n        TrafLight.setRedOn(false);\n        scope.conStatus = 'Connected';\n      } else if (msg.payload === 'con_timeout') {\n        TrafLight.setRedOn(true);\n        scope.conStatus = 'Connection Timeout';\n      } else if (msg.error !== undefined) {\n        TrafLight.setYellowOn(true);\n        scope.jsonStatus = 'JSON Error';\n      }\n    }\n  });\n}(scope));\nscope.conStatus = 'Connected';\nscope.jsonStatus = 'JSON OK';\n</script>\n\n\n<table width=\"100%\" border=\"0\">\n  <tbody>\n    <tr>\n      <td width=\"105\" rowspan=\"3\"><canvas id=\"canvasTrafLight\" width=\"100\" height=\"200\"></canvas></td>\n      <td>{{conStatus}}</td>\n    </tr>\n    <tr>\n      <td>{{jsonStatus}}</td>\n    </tr>\n    <tr>\n      <td>Heart Beat {{msg.timestamp}}</td>\n    </tr>\n  </tbody>\n</table>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "templateScope": "local",
-        "x": 1520,
+        "x": 1546,
         "y": 1600,
         "wires": [
             []
@@ -1612,7 +1612,7 @@
         "reset": "",
         "bytopic": "all",
         "name": "Heart Beat",
-        "x": 1250,
+        "x": 1276,
         "y": 1600,
         "wires": [
             [
@@ -1639,7 +1639,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1240,
+        "x": 1266,
         "y": 1520,
         "wires": [
             [
@@ -1665,7 +1665,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1050,
+        "x": 1076,
         "y": 1540,
         "wires": [
             [
@@ -1695,7 +1695,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1240,
+        "x": 1266,
         "y": 1560,
         "wires": [
             [
@@ -1750,7 +1750,7 @@
         "order": 0,
         "width": "3",
         "height": "6",
-        "format": "<script type=\"text/javascript\" src=\"/addons/red/static/scripts/steelseries-min.js\"></script>\n<script type=\"text/javascript\" src=\"/addons/red/static/scripts/tween-min.js\"></script>\n\n<script>\nvar linearThermo;\nlinearThermo = new steelseries.Linear('canvasLinearThermo', {\n                 width: 140,\n                 height: 320,\n                 gaugeType: steelseries.GaugeType.TYPE2,\n                 titleString: \"Außentemperatur\",\n                 unitString: \"°C\",\n                 ledVisible: false,\n                 lcdVisible: true,\n                 thresholdRising: false,\n                 thresholdVisible: false,\n                 niceScale: true,\n                 minValue: -25,\n                 maxValue: 40\n               });\n                    \nlinearThermo.setFrameDesign(steelseries.FrameDesign.BLACK_METAL);\nlinearThermo.setBackgroundColor(steelseries.BackgroundColor.BRUSHED_METAL);\nlinearThermo.setValueAnimated(0);\nlinearThermo.setMaxValue(40);\n\n(function(scope){ \n  scope.$watch('msg', function(msg) {\n    if (msg.payload !== undefined && msg.topic === '/weatherman/status/w_temperature') {\n      linearThermo.setValueAnimated(msg.payload);\n      if (msg.payload > 0) {\n        linearThermo.setMaxValue(msg.payload + 2);\n        linearThermo.setMinValue(0);\n      } else if (msg.payload < 0) {\n        linearThermo.setMaxValue(0);\n        linearThermo.setMinValue(msg.payload - 2);\n      }\n    }\n  });\n})(scope);\n</script>\n\n<canvas id=\"canvasLinearThermo\" width=\"140\" height=\"320\"></canvas>\n",
+        "format": "<script>\nvar linearThermo;\nlinearThermo = new steelseries.Linear('canvasLinearThermo', {\n                 width: 140,\n                 height: 320,\n                 gaugeType: steelseries.GaugeType.TYPE2,\n                 titleString: \"Außentemperatur\",\n                 unitString: \"°C\",\n                 ledVisible: false,\n                 lcdVisible: true,\n                 thresholdRising: false,\n                 thresholdVisible: false,\n                 niceScale: true,\n                 minValue: -25,\n                 maxValue: 40\n               });\n                    \nlinearThermo.setFrameDesign(steelseries.FrameDesign.BLACK_METAL);\nlinearThermo.setBackgroundColor(steelseries.BackgroundColor.BRUSHED_METAL);\nlinearThermo.setValueAnimated(0);\nlinearThermo.setMaxValue(40);\n\n(function(scope){ \n  scope.$watch('msg', function(msg) {\n    if (msg.payload !== undefined && msg.topic === '/weatherman/status/w_temperature') {\n      linearThermo.setValueAnimated(msg.payload);\n      if (msg.payload > 0) {\n        linearThermo.setMaxValue(msg.payload + 2);\n        linearThermo.setMinValue(0);\n      } else if (msg.payload < 0) {\n        linearThermo.setMaxValue(0);\n        linearThermo.setMinValue(msg.payload - 2);\n      }\n    }\n  });\n})(scope);\n</script>\n\n<canvas id=\"canvasLinearThermo\" width=\"140\" height=\"320\"></canvas>\n",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "templateScope": "local",
@@ -1855,7 +1855,7 @@
         "z": "b016607a.570c28",
         "name": "Einfaches Monitoring und Fehlerbehandlung",
         "info": "",
-        "x": 1080,
+        "x": 1106,
         "y": 1460,
         "wires": []
     },
@@ -1900,7 +1900,7 @@
         "order": 0,
         "width": "5",
         "height": "5",
-        "format": "<script>\n\n/*\n * Version 6 of the Windrose/Radar gauge\n * Originally created by Mark Crossley\n * Source: https://www.weather-watch.com/smf/index.php/topic,55071.0.html\n *\n */\n\n\n// Create some global variables to hold references to the buffers\nvar g_bufferRadar, g_bufferRadarFrame, g_bufferRadarBackground,\n    g_bufferRadarForeground, g_ctxRadarGauge;\nvar g_radarPlotSize;\n\n// Global variables that already exist in gauges-ss, if merging into gauge-ss, you\n// DO NOT need to add these\nvar g_size = 281;\nvar data = {};\nvar g_frameDesign = steelseries.FrameDesign.BLACK_METAL;\nvar g_background = steelseries.BackgroundColor.BRUSHED_METAL;\nvar g_foreground = steelseries.ForegroundType.TYPE1;\nvar LANG = {};\nLANG.compass = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];\n\n// Optional - background image - Already in gauges-ss\n//var g_imgPathURL = 'images/';\n//var g_imgSmall = document.createElement(\"img\");                     //  background image\n//g_imgSmall.setAttribute(\"src\", g_imgPathURL + \"logoLarge.png\");\n\nfunction init() {\n\n  // Calcuate the size of the gauge background and so the size of radar plot required\n  g_radarPlotSize = g_size * 0.68;\n\n  // Create a hidden div to host the Radar plot\n  var div = document.createElement('div');\n  div.style.display = 'none';\n  document.body.appendChild(div);\n\n  // radar plot canvas buffer\n  g_bufferRadar = document.createElement('canvas');\n  g_bufferRadar.width = g_radarPlotSize;\n  g_bufferRadar.height = g_radarPlotSize;\n  g_bufferRadar.id = 'radarPlot';\n  div.appendChild(g_bufferRadar);\n\n  // Create a steelseries gauge frame\n  g_bufferRadarFrame = document.createElement('canvas');\n  g_bufferRadarFrame.width = g_size;\n  g_bufferRadarFrame.height = g_size;\n  var ctxFrame = g_bufferRadarFrame.getContext('2d');\n  steelseries.drawFrame(ctxFrame, g_frameDesign, g_size/2, g_size/2, g_size, g_size);\n\n  // Create a steelseries gauge background\n  g_bufferRadarBackground = document.createElement('canvas');\n  g_bufferRadarBackground.width = g_size;\n  g_bufferRadarBackground.height = g_size;\n  var ctxBackground = g_bufferRadarBackground.getContext('2d');\n  steelseries.drawBackground(ctxBackground, g_background, g_size/2, g_size/2, g_size, g_size);\n  // Optional - add a background image\n  //var drawSize = g_size * 0.831775;\n  //var x = (g_size - drawSize) / 2;\n  //ctxBackground.drawImage(g_imgSmall, x, x, drawSize, drawSize);\n\n  // Add the compass points\n  drawCompassPoints(ctxBackground, g_size);\n\n  // Create a steelseries gauge forground\n  g_bufferRadarForeground = document.createElement('canvas');\n  g_bufferRadarForeground.width = g_size;\n  g_bufferRadarForeground.height = g_size;\n  var ctxForegound = g_bufferRadarForeground.getContext('2d');\n  steelseries.drawForeground(ctxForegound, g_foreground, g_size, g_size, false);\n\n  // Get the context of the gauge canavs on the HTML page\n  g_ctxRadarGauge = document.getElementById('canvasGauge').getContext('2d');\n}\n\n\n// Just draw an empty gauge as a placeholder when the page loads\nfunction drawWindRose() {\n  // Paint the gauge frame\n  g_ctxRadarGauge.drawImage(g_bufferRadarFrame, 0, 0);\n\n  // Paint the gauge background\n  g_ctxRadarGauge.drawImage(g_bufferRadarBackground, 0, 0);\n\n  // Paint the gauge foreground\n  g_ctxRadarGauge.drawImage(g_bufferRadarForeground, 0, 0);\n}\n\n// Redraw the gauge with data\nfunction doWindRose() {\n  console.log(data.WindRoseData);\n  // Clear the gauge\n  g_ctxRadarGauge.clearRect(0, 0, g_size, g_size);\n\n  // Clear the existing radar plot\n  g_bufferRadar.width = g_bufferRadar.height = g_radarPlotSize;\n\n  // Create a new radar plot\n  var radar = new RGraph.Radar('radarPlot', data.WindRoseData);\n  radar.Set('chart.strokestyle', 'black');\n  radar.Set('chart.colors.alpha', 0.4);\n  radar.Set('chart.colors', ['red']);\n\n  radar.Set('chart.title', 'Wind  Rose');\n  radar.Set('chart.title.size', Math.ceil(0.045 * g_radarPlotSize));\n  radar.Set('chart.title.bold', false);\n  radar.Set('chart.gutter.top', 0.2 * g_radarPlotSize);\n  radar.Set('chart.gutter.bottom', 0.2 * g_radarPlotSize);\n\n  radar.Set('chart.tooltips.effect', 'snap');\n  radar.Set('chart.labels.axes', '');\n  radar.Set('chart.background.circles', true);\n  radar.Set('chart.radius', g_radarPlotSize/2);\n  radar.Draw();\n\n  // Paint the gauge frame\n  g_ctxRadarGauge.drawImage(g_bufferRadarFrame, 0, 0);\n\n  // Paint the gauge background\n  g_ctxRadarGauge.drawImage(g_bufferRadarBackground, 0, 0);\n\n  // Paint the radar plot\n  var offset = (g_size - g_radarPlotSize) / 2;\n  g_ctxRadarGauge.drawImage(g_bufferRadar, offset, offset);\n\n  // Paint the gauge foreground\n  g_ctxRadarGauge.drawImage(g_bufferRadarForeground, 0, 0);\n\n}\n\n\n// Helper function to put the compass points on the background\nfunction drawCompassPoints(ctx, size) {\n  ctx.save();\n  // set the font\n  ctx.font = (0.06 * size) + 'px serif';\n  ctx.fillStyle = '#000000';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n\n  // Draw the compass points\n  for (var i=0; i<4; i++) {\n    ctx.translate(size/2, size*0.125);\n    ctx.fillText(LANG.compass[i*2], 0, 0, size);\n    ctx.translate(-size/2, -size*0.125);\n    // Move to center\n    ctx.translate(size/2, size/2);\n    ctx.rotate(Math.PI/2);\n    ctx.translate(-size/2, -size/2);\n  }\n  ctx.restore();\n}\n// Initial setup\ninit();\ndrawWindRose();\n\n(function(scope) {\n  scope.$watch('msg', function(msg) {\n    if (msg.payload !== undefined) {\n      drawWindRose();\n      data.WindRoseData = msg.payload;\n      doWindRose();\n    }\n  });\n}(scope));\n\n</script>\n\n<canvas id=\"canvasGauge\" width=\"301\" height=\"301\">No canvas in your browser...sorry...</canvas>\n\n\n\n\n\n",
+        "format": "<script>\n\n/*\n * Version 6 of the Windrose/Radar gauge\n * Originally created by Mark Crossley\n * Source: https://www.weather-watch.com/smf/index.php/topic,55071.0.html\n *\n */\n\n\n// Create some global variables to hold references to the buffers\nvar g_bufferRadar, g_bufferRadarFrame, g_bufferRadarBackground,\n    g_bufferRadarForeground, g_ctxRadarGauge;\nvar g_radarPlotSize;\n\n// Global variables that already exist in gauges-ss, if merging into gauge-ss, you\n// DO NOT need to add these\nvar g_size = 281;\nvar data = {};\nvar g_frameDesign = steelseries.FrameDesign.BLACK_METAL;\nvar g_background = steelseries.BackgroundColor.BRUSHED_METAL;\nvar g_foreground = steelseries.ForegroundType.TYPE1;\nvar LANG = {};\nLANG.compass = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];\n\n// Optional - background image - Already in gauges-ss\n//var g_imgPathURL = 'images/';\n//var g_imgSmall = document.createElement(\"img\");                     //  background image\n//g_imgSmall.setAttribute(\"src\", g_imgPathURL + \"logoLarge.png\");\n\nfunction init() {\n\n  // Calcuate the size of the gauge background and so the size of radar plot required\n  g_radarPlotSize = g_size * 0.68;\n\n  // Create a hidden div to host the Radar plot\n  var div = document.createElement('div');\n  div.style.display = 'none';\n  document.body.appendChild(div);\n\n  // radar plot canvas buffer\n  g_bufferRadar = document.createElement('canvas');\n  g_bufferRadar.width = g_radarPlotSize;\n  g_bufferRadar.height = g_radarPlotSize;\n  g_bufferRadar.id = 'radarPlot';\n  div.appendChild(g_bufferRadar);\n\n  // Create a steelseries gauge frame\n  g_bufferRadarFrame = document.createElement('canvas');\n  g_bufferRadarFrame.width = g_size;\n  g_bufferRadarFrame.height = g_size;\n  var ctxFrame = g_bufferRadarFrame.getContext('2d');\n  steelseries.drawFrame(ctxFrame, g_frameDesign, g_size/2, g_size/2, g_size, g_size);\n\n  // Create a steelseries gauge background\n  g_bufferRadarBackground = document.createElement('canvas');\n  g_bufferRadarBackground.width = g_size;\n  g_bufferRadarBackground.height = g_size;\n  var ctxBackground = g_bufferRadarBackground.getContext('2d');\n  steelseries.drawBackground(ctxBackground, g_background, g_size/2, g_size/2, g_size, g_size);\n  // Optional - add a background image\n  //var drawSize = g_size * 0.831775;\n  //var x = (g_size - drawSize) / 2;\n  //ctxBackground.drawImage(g_imgSmall, x, x, drawSize, drawSize);\n\n  // Add the compass points\n  drawCompassPoints(ctxBackground, g_size);\n\n  // Create a steelseries gauge forground\n  g_bufferRadarForeground = document.createElement('canvas');\n  g_bufferRadarForeground.width = g_size;\n  g_bufferRadarForeground.height = g_size;\n  var ctxForegound = g_bufferRadarForeground.getContext('2d');\n  steelseries.drawForeground(ctxForegound, g_foreground, g_size, g_size, false);\n\n  // Get the context of the gauge canavs on the HTML page\n  g_ctxRadarGauge = document.getElementById('canvasGauge').getContext('2d');\n}\n\n\n// Just draw an empty gauge as a placeholder when the page loads\nfunction drawWindRose() {\n  // Paint the gauge frame\n  g_ctxRadarGauge.drawImage(g_bufferRadarFrame, 0, 0);\n\n  // Paint the gauge background\n  g_ctxRadarGauge.drawImage(g_bufferRadarBackground, 0, 0);\n\n  // Paint the gauge foreground\n  g_ctxRadarGauge.drawImage(g_bufferRadarForeground, 0, 0);\n}\n\n// Redraw the gauge with data\nfunction doWindRose() {\n  //console.log(data.WindRoseData);\n  // Clear the gauge\n  g_ctxRadarGauge.clearRect(0, 0, g_size, g_size);\n\n  // Clear the existing radar plot\n  g_bufferRadar.width = g_bufferRadar.height = g_radarPlotSize;\n\n  // Create a new radar plot\n  var radar = new RGraph.Radar('radarPlot', data.WindRoseData);\n  radar.Set('chart.strokestyle', 'black');\n  radar.Set('chart.colors.alpha', 0.4);\n  radar.Set('chart.colors', ['red']);\n\n  radar.Set('chart.title', 'Wind  Rose');\n  radar.Set('chart.title.size', Math.ceil(0.045 * g_radarPlotSize));\n  radar.Set('chart.title.bold', false);\n  radar.Set('chart.gutter.top', 0.2 * g_radarPlotSize);\n  radar.Set('chart.gutter.bottom', 0.2 * g_radarPlotSize);\n\n  radar.Set('chart.tooltips.effect', 'snap');\n  radar.Set('chart.labels.axes', '');\n  radar.Set('chart.background.circles', true);\n  radar.Set('chart.radius', g_radarPlotSize/2);\n  radar.Draw();\n\n  // Paint the gauge frame\n  g_ctxRadarGauge.drawImage(g_bufferRadarFrame, 0, 0);\n\n  // Paint the gauge background\n  g_ctxRadarGauge.drawImage(g_bufferRadarBackground, 0, 0);\n\n  // Paint the radar plot\n  var offset = (g_size - g_radarPlotSize) / 2;\n  g_ctxRadarGauge.drawImage(g_bufferRadar, offset, offset);\n\n  // Paint the gauge foreground\n  g_ctxRadarGauge.drawImage(g_bufferRadarForeground, 0, 0);\n\n}\n\n\n// Helper function to put the compass points on the background\nfunction drawCompassPoints(ctx, size) {\n  ctx.save();\n  // set the font\n  ctx.font = (0.06 * size) + 'px serif';\n  ctx.fillStyle = '#000000';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n\n  // Draw the compass points\n  for (var i=0; i<4; i++) {\n    ctx.translate(size/2, size*0.125);\n    ctx.fillText(LANG.compass[i*2], 0, 0, size);\n    ctx.translate(-size/2, -size*0.125);\n    // Move to center\n    ctx.translate(size/2, size/2);\n    ctx.rotate(Math.PI/2);\n    ctx.translate(-size/2, -size/2);\n  }\n  ctx.restore();\n}\n\n(function(scope) {\n  init();\n  drawWindRose();\n  scope.$watch('msg', function(msg) {\n    if (msg.payload !== undefined) {\n    //  drawWindRose();\n      data.WindRoseData = msg.payload;\n      doWindRose();\n    }\n  });\n}(scope));\n\n</script>\n\n<canvas id=\"canvasGauge\" width=\"301\" height=\"301\">No canvas in your browser...sorry...</canvas>\n\n\n\n\n\n",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "templateScope": "local",
