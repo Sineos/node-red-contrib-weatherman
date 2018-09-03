@@ -54,6 +54,7 @@ Um die entsprechenden Einstellungen vornehmen zu können muss der SSH Zugang akt
 Mit dem SSH Zugang wird ein neues Verzeichnis für die entsprechenden Skripte angelegt. Der Flow hier verwendet:
 
     /usr/local/sdcard/www/addons/red/static/scripts
+
 Dieses Verzeichnis muss angelegt werden und folgende Dateien müssen hochgeladen werden:
 
 - [steelseries-min.js](https://github.com/HanSolo/SteelSeries-Canvas/blob/master/steelseries-min.js)
@@ -65,6 +66,7 @@ Dieses Verzeichnis muss angelegt werden und folgende Dateien müssen hochgeladen
 Um das, im vorherigen Schritt angelegte, Verzeichnis in Node-Red bekannt zu machen, muss die Datei `settings.json` editiert werden. In RedMatic liegt diese unter:
 
     /usr/local/addons/redmatic/etc/settings.json
+
 Diese Datei muss um den Eintrag `"httpStatic": "/usr/local/sdcard/www"` ergänzt werden und sieht dann beispielhaft so aus:
 ```
 {
@@ -92,7 +94,7 @@ In der weiteren Erklärung wird auf einzelne Nodes näher eingegangen.
 
 ### TCP in Node: Listen Weatherman
 
-https://raw.githubusercontent.com/Sineos/node-red-contrib-weatherman/master/src_readme/tcp_in.png" width="400"/>
+<img src="https://raw.githubusercontent.com/Sineos/node-red-contrib-weatherman/master/src_readme/tcp_in.png" width="400"/>
 
 #### Beschreibung
 
@@ -105,7 +107,7 @@ Verbindungspunkt zum Weatherman.
 
 ### Function Node: Parse JSON
 
-https://raw.githubusercontent.com/Sineos/node-red-contrib-weatherman/master/src_readme/function_parse1.png" width="400"/>
+<img src="https://raw.githubusercontent.com/Sineos/node-red-contrib-weatherman/master/src_readme/function_parse1.png" width="400"/>
 
 #### Beschreibung
 
@@ -126,7 +128,7 @@ Die 3 Möglichkeiten sind:
 
 ### Change Node: weatherman_ip
 
-https://raw.githubusercontent.com/Sineos/node-red-contrib-weatherman/master/src_readme/change_ip.png " width="400"/>
+<img src="https://raw.githubusercontent.com/Sineos/node-red-contrib-weatherman/master/src_readme/change_ip.png" width="400"/>
 
 #### Beschreibung
 
@@ -144,7 +146,7 @@ Sollte sich mit späteren Weatherman Firmware Versionen die Reihenfolge der Date
 
 ### Template Node: Load required scripts
 
-https://raw.githubusercontent.com/Sineos/node-red-contrib-weatherman/master/src_readme/template_scripts.png " width="400"/>
+<img src="https://raw.githubusercontent.com/Sineos/node-red-contrib-weatherman/master/src_readme/template_scripts.png" width="400"/>
 
 #### Beschreibung
 
@@ -156,7 +158,7 @@ Stellt die, zur Visualisierung benötigten, Skript Bibliotheken global zur Verf�
 
 ### Template Node: Windrichtung
 
-https://raw.githubusercontent.com/Sineos/node-red-contrib-weatherman/master/src_readme/template_winddir.png " width="400"/>
+<img src="https://raw.githubusercontent.com/Sineos/node-red-contrib-weatherman/master/src_readme/template_winddir.png" width="400"/>
 
 #### Beschreibung
 
@@ -177,7 +179,7 @@ An Hand dieses Beispiels wird kurz auf die Visualisierung eingegangen.
 
 ### Function Node: WindData
 
-https://raw.githubusercontent.com/Sineos/node-red-contrib-weatherman/master/src_readme/function_winddata.png " width="400"/>
+<img src="https://raw.githubusercontent.com/Sineos/node-red-contrib-weatherman/master/src_readme/function_winddata.png" width="400"/>
 
 #### Beschreibung
 
@@ -191,7 +193,7 @@ Diese Funktion summiert, über angegebene Zeitintervalle, die aufgetretenen Wind
 
 ### Nodes: Einfaches Monitoring und Fehlerbehandlung
 
-https://raw.githubusercontent.com/Sineos/node-red-contrib-weatherman/master/src_readme/error_handling.png " width="400"/>
+<img src="https://raw.githubusercontent.com/Sineos/node-red-contrib-weatherman/master/src_readme/error_handling.png" width="400"/>
 
 #### Beschreibung
 
