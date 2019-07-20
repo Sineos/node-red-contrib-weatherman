@@ -1,10 +1,11 @@
+
 # node-red-contrib-weatherman
 
 [German version of the ReadMe](https://github.com/Sineos/node-red-contrib-weatherman/blob/master/README_DE.md) 
 
 A Node Red flow to parse [Weatherman's](https://www.stall.biz/project/weatherman-die-perfekte-wetterstation-fuer-die-hausautomation) JSON data. The flow offers:
 
- - 3 different ways to parse JSON
+ - Will also work with other [Stall WIFFIs](https://www.stall.biz/)
  - Simple health monitoring and error reporting
  - Rudimentary weather UI using Node Red's dashboard and [Steelseries Gauges](https://github.com/HanSolo/SteelSeries-Canvas) 
 

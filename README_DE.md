@@ -1,9 +1,10 @@
 
+
 # node-red-contrib-weatherman
 
 Dieser Flow erlaubt es die JSON Daten des [Weatherman's](https://www.stall.biz/project/weatherman-die-perfekte-wetterstation-fuer-die-hausautomation) zu verarbeiten und in einem Dashboard zu visualisieren. Dieser Flow geht von der Verwendung auf einer CCU3 / [RaspberryMatic](https://github.com/jens-maus/RaspberryMatic#raspberrymatic) und [RedMatic](https://github.com/hobbyquaker/RedMatic) aus. Beispielhaft wird dargestellt:
 
- - 3 Möglichkeiten JSON auszulesen
+ - Funktionier auch mit anderen [Stall WIFFIs](https://www.stall.biz/)
  - Einfache Möglichkeit den Weatherman und die Verbindung zu überwachen
  - Eine einfache UI unter Verwendung von [RGraph](https://www.rgraph.net/) und [Steelseries Gauges](https://github.com/HanSolo/SteelSeries-Canvas)
    - [Demo Radial](http://www.wilmslowastro.com/steelseries/demoRadial.html) 
@@ -111,38 +112,28 @@ Verbindungspunkt zum Weatherman.
 
 #### Beschreibung
 
-Beispielhaft stellt der Flow 3 verschiedene Möglichkeiten dar, wie das Weatherman JSON verarbeitet werden kann. Das JSON hat hier eine Besonderheit, da es mit einem `End Of Transmission (EOT)` Zeichen endet, welches nicht zu den Daten gehört, aber praktisch ist, da man einen kompletten Empfang damit validieren kann.
-
-Die 3 Möglichkeiten sind:
-
- 1. JSON auslesen und in folgenden Nodes auf die einzelnen Daten zugreifen
- 2. JSON auslesen und über einen Output die Daten als einzelne Nachrichten verschicken
- 3. JSON auslesen und über n Outputs die Daten zur Weiterverarbeitung zur Verfügung stellen
+Das JSON hat hier eine Besonderheit, da es mit einem `End Of Transmission (EOT)` Zeichen endet, welches nicht zu den Daten gehört, aber praktisch ist, da man einen kompletten Empfang damit validieren kann.
 
 #### Funktion
 
- - Mit der Variable `BasePath` wird der erste Teil der späteren `msg.topic` gesetzt. Dieser BasePath wird jeweils um den Namen des entsprechenden Datenpunkts vom Weatherman ergänzt
+ - Mit der Variable `BasePath` wird der erste Teil der späteren `msg.topic` gesetzt. 
+ - Der BasePath wird vom dem Skript automatisch mit dem Modultyp (z.B. weatherman, pulsecounter etc.) ergänzt. Damit lassen sich dann verschiedene Wiffi's unterscheiden
+ - Weiterhin wird der BasePath dann noch mit dem Namen des jeweiligen Datenpunktes ergänzt. Damit ergibt sich dann ein `msg.topic` der Form:  `weatherman/status/w_temperatur`
  - Über `msg.timestamp` wird den Daten jeweils noch die aktuelle Zeit mitgegeben  
  - Mit `node.error` wird ein Fehler-Event erzeugt, falls es beim Parsen der Daten Probleme gibt, z.B. kein EOT gefunden oder bei einem fehlerhaften JSON Datensatz 
- - Bei Möglichkeit #2 und #3 wird der jeweiligen Nachricht noch über `msg.unit` die entsprechende Messgröße mitgegeben
+ - Als letztes wird der Nachricht noch über `msg.unit` die entsprechende Messgröße mitgegeben
 
-### Change Node: weatherman_ip
+### Switch Node: w_xxx
 
-<img src="https://raw.githubusercontent.com/Sineos/node-red-contrib-weatherman/master/src_readme/change_ip.png" width="400"/>
+<img src="https://raw.githubusercontent.com/Sineos/node-red-contrib-weatherman/master/src_readme/switch_input.png" width="400"/>
 
 #### Beschreibung
 
-Die gesamte Reihe an Change Nodes zerlegt das geparste JSON Paket in seine Bestandteile und stellt damit die gemessenen Werte einzeln zur Verfügung.
-
-Mit `payload.vars.0` wird der erste Werteblock im JSON angesprochen, mit `payload.vars.1` der zweite usw.
-
-Sollte sich mit späteren Weatherman Firmware Versionen die Reihenfolge der Daten ändern, ist hier entsprechend anzupassen, da sonst die Temperatur ggf. beim Wind landet etc.
+Die gesamte Reihe an `Switch` Nodes zerlegt das geparste JSON Paket in seine Bestandteile und stellt damit die gemessenen Werte einzeln zur Verfügung.
 
 #### Funktion
 
- - Mit dem JSONata Ausdruck `$$.topic & $$.payload.vars[0].homematic_name` wird das vorhandene `msg.topic` (siehe `BasePath` aus Parse JSON) genommen und um den Wert des `homematic_name` Schlüssels ergänzt.
- - Der Wert aus `payload.vars.0.unit` wird `msg.unit` zugewiesen
- - Der Wert aus `payload.vars.0.value` wird `msg.payload` zugewiesen
+ - Jede einzelne Node lässt nur das eindeutige msg.topic eines bestimmten Modultyps und Messwerts durch 
 
 ### Template Node: Load required scripts
 
